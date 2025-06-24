@@ -1,0 +1,148 @@
+
+/*  Mother Elements  */
+
+* {
+  margin: 0;                
+  padding: 0;               
+  box-sizing: border-box;  
+}
+body {
+  font-family: 'Poppins', sans-serif;   
+  background-color: #ffffff;   
+  color: #000000;              
+  line-height: 1.6;       
+  position: relative;
+  background: url(Backdrop.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+     display: flex;
+     justify-content: space-between; 
+     align-items: flex-start;       
+     height: 100vh;
+     width: 100%;
+  }
+
+
+/*   Welcome Box   */
+
+.Welcome-box {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: rgba(0, 0, 0, 0.2); 
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 50px; 
+}
+
+.Welcome-box.visible {
+  transform: translateY(0);
+  opacity: 1;
+}     
+
+.Welcome-Text {
+  font-size: 1.3rem;
+}
+.Welcome-Text p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+.h1 {
+    color: rgb(206, 206, 206);
+}
+
+
+/*   Sidebar   */
+
+.side {
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding-top: 65px;
+  text-align: left;
+  justify-content: left;
+  height: 100vh;
+  padding-left: 50px;
+  line-height: 4.5;
+  color: #ffffff;
+  width: 220px;               
+  transition: width 0.3s ease;
+  overflow: hidden;           
+} 
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.sidebar a:hover {
+  color: #00bcd4;
+}
+.side.closed {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  padding-left: 0;         
+  padding-top: 65px;  
+}
+
+.sidebar ul {
+  list-style: none;     
+  padding-left: 0;     
+  margin: 0;            
+}
+
+.sidebar {
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.side:not(.closed) .sidebar {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.side.closed .sidebar {
+  pointer-events: none;
+}
+
+.sidebar ul {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.side:not(.closed) .sidebar ul {
+  transform: translateY(0);
+  opacity: 1;
+}
+/*   Toggle Button   */
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+
