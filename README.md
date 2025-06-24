@@ -12,10 +12,10 @@ A responsive sidebar layout built with HTML, CSS, and JavaScript. Includes a sli
 ## ScreenShots
 
 ### Sidebar View
-![Sidebar View](https://github.com/AliMustafaSiddiqui/sidebar-project/blob/main/Screenshot%202025-06-24%20115750.png)
+![Sidebar View](https://github.com/AliMustafaSiddiqui/sidebar-project/blob/main/Screenshot%202025-06-24%20115817.png)
 
 ### Welcome Box
-![Welcome Box](https://github.com/AliMustafaSiddiqui/sidebar-project/blob/main/Screenshot%202025-06-24%20115817.png)
+![Welcome Box](https://github.com/AliMustafaSiddiqui/sidebar-project/blob/main/Screenshot%202025-06-24%20115750.png)
 
 ## Tech Stack
 - HTML
