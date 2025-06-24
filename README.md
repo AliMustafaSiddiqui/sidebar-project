@@ -10,7 +10,12 @@ A responsive sidebar layout built with HTML, CSS, and JavaScript. Includes a sli
 - Responsive toggle button
 - 
 ## ScreenShots
-   
+
+### Sidebar View
+![Sidebar View]()
+
+### Welcome Box
+![Welcome Box]()
 
 ## Tech Stack
 - HTML
